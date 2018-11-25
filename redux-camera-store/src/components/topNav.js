@@ -1,12 +1,12 @@
 import React from 'react';
 import {
-  Collapse,
+  // Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
+  NavbarBrand
+  // Nav,
+  // NavItem,
+  // NavLink,
  } from 'reactstrap';
 
 export default class Example extends React.Component {

@@ -16,7 +16,7 @@ export default (state=initialState, action) => {
       return action.payload
 
     case REMOVE_CAMERA_FROM_CART_SUCCESS:
-      return state.filter(camera => camera.id !== Number(action.payload))
+      return state.filter(camera => camera.id !== Number(action.payload.id))
 
     case REMOVE_CAMERA_FROM_CART_FAIL:
       return action.payload
