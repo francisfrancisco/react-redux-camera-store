@@ -16,7 +16,7 @@ class CameraList extends Component {
   render(){
     let listOfCameras  = this.props.cameras
     .filter(camera => camera.name.toLowerCase().includes(this.state.filterPhrase.toLowerCase()))
-    .map(camera => <Camera key={camera.id} camera={camera} addItem={this.props.addItem} />)
+    .map(camera => <Camera key={camera.id} camera={camera} addItem={this.props.addCamera} />)
   return (
     <div className="text-left">
       <input type="text" name="filterPhrase" onChange={this.handleChange} value={this.state.filterPhrase} />

@@ -23,7 +23,7 @@ const Camera = (props) => {
       </p>
       <Button color="primary"
         onClick={
-        () => props.addItem(props.camera.id)
+        () => props.addCamera(props.camera.id)
       }>Add to Cart</Button>
     </div>
   )
